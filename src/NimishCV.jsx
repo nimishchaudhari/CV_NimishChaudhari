@@ -9,7 +9,7 @@ import {
   EmailIcon, PhoneIcon, LinkIcon, CalendarIcon,
   StarIcon, CodeIcon, CheckCircleIcon, ExternalLinkIcon
 } from '@chakra-ui/icons';
-import { FaGithub, FaLinkedin, FaSun, FaMoon, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaSun, FaMoon, FaDownload, FaUserTie, FaCertificate, FaGraduationCap, FaCheckCircle, FaLocationDot, FaMusic, FaCode, FaUniversity, FaCalendar, FaBook, FaChalkboardTeacher, FaUser } from 'react-icons/fa';
 
 const sectionIcons = {
   contact: <PhoneIcon />,
@@ -168,17 +168,10 @@ const NimishCV = () => {
   // Dark mode state
   const { colorMode, toggleColorMode } = useColorMode();
   const dark = colorMode === 'dark';
-  const setDark = (isDark) => {
-    if (isDark) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
-  };
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-  }, []);
+  }, [dark]);
 
   // Download PDF handler using html2pdf.js
   const handleDownloadPDF = async () => {
@@ -210,7 +203,7 @@ const NimishCV = () => {
           <IconButton
             aria-label="Toggle dark mode"
             icon={dark ? <Icon as={StarIcon} /> : <Icon as={SunIcon} />}
-            onClick={() => setDark((d) => !d)}
+            onClick={toggleColorMode}
             variant="ghost"
             size="lg"
           />
