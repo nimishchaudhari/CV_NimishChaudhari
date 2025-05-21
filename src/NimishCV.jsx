@@ -7,19 +7,19 @@ import {
 } from '@chakra-ui/react';
 import {
   EmailIcon, PhoneIcon, LinkIcon, CalendarIcon,
-  StarIcon, CodeIcon, CheckCircleIcon, ExternalLinkIcon
+  StarIcon, CheckCircleIcon, ExternalLinkIcon
 } from '@chakra-ui/icons';
-import { FaGithub, FaLinkedin, FaSun, FaMoon, FaDownload, FaUserTie, FaCertificate, FaGraduationCap, FaCheckCircle, FaLocationDot, FaMusic, FaCode, FaUniversity, FaCalendar, FaBook, FaChalkboardTeacher, FaUser } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaSun, FaMoon, FaDownload, FaUserTie, FaCertificate, FaGraduationCap, FaCheckCircle, FaMapMarkerAlt, FaMusic, FaCode, FaUniversity, FaCalendar, FaBook, FaChalkboardTeacher, FaUser, FaBriefcase } from 'react-icons/fa';
 
 const sectionIcons = {
   contact: <PhoneIcon />,
   social: <LinkIcon />,
   soft: <StarIcon />,
-  lang: <CodeIcon />,
+  lang: <Icon as={FaCode} />,
   interests: <CheckCircleIcon />,
   profile: <Icon as={FaUserTie} />,
   work: <Icon as={FaBriefcase} />,
-  skills: <CodeIcon />,
+  skills: <Icon as={FaCode} />,
   cert: <Icon as={FaCertificate} />,
   edu: <Icon as={FaGraduationCap} />,
 };
@@ -235,7 +235,7 @@ const NimishCV = () => {
                 <Text>{personalInfo.email}</Text>
               </HStack>
               <HStack>
-                <Icon as={FaLocationDot} />
+                <Icon as={FaMapMarkerAlt} />
                 <Text>{personalInfo.location}</Text>
               </HStack>
               <HStack>
@@ -425,7 +425,7 @@ const NimishCV = () => {
                   <Text fontWeight="medium">{edu.institution}</Text>
                 </HStack>
                 <HStack mb={3} color="gray.500" fontSize="sm">
-                  <Icon as={FaLocationDot} />
+                  <Icon as={FaMapMarkerAlt} />
                   <Text>{edu.location}</Text>
                   <Icon as={FaCalendar} ml={4} />
                   <Text>{edu.period}</Text>
