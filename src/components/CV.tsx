@@ -18,10 +18,7 @@ const CV = () => {
           <div className="mb-5">
             <h1 className="text-xl font-bold mb-1 text-gray-800">Nimish</h1>
             <h1 className="text-xl font-bold mb-2 text-gray-800">CHAUDHARI</h1>
-            <div className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-medium mb-2">
-              AI & Data Science Consultant
-            </div>
-            <p className="text-gray-700 text-xs leading-relaxed">Transforming Business Through Intelligent Automation & Data-Driven Solutions</p>
+            <p className="text-gray-700 text-xs leading-relaxed">Transforming Business Through AI & Data-Driven Solutions</p>
           </div>
 
           {/* Contact Info */}
@@ -40,7 +37,7 @@ const CV = () => {
             </div>
             <div className="flex items-center gap-2 text-gray-700">
               <Linkedin className="w-3 h-3 text-blue-600" />
-              <span>nimishchaudhari</span>
+              <a href="https://www.linkedin.com/in/nimishchaudhari/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">nimishchaudhari</a>
             </div>
             <div className="flex items-center gap-2 text-gray-700">
               <Car className="w-3 h-3 text-blue-600" />
@@ -71,7 +68,7 @@ const CV = () => {
           <div className="mb-5">
             <h3 className="text-sm font-bold mb-3 text-gray-800 flex items-center gap-2">
               <Code className="w-4 h-4 text-blue-600" />
-              CORE AI EXPERTISE
+              CORE EXPERTISE
             </h3>
             <div className="space-y-1 text-xs">
               <div className="bg-blue-100 px-2 py-1 rounded">Machine Learning & Deep Learning</div>
@@ -109,12 +106,12 @@ const CV = () => {
 
           {/* Professional Interests */}
           <div>
-            <h3 className="text-sm font-bold mb-3 text-gray-800">PROFESSIONAL INTERESTS</h3>
+            <h3 className="text-sm font-bold mb-3 text-gray-800">INTERESTS</h3>
             <ul className="text-xs space-y-1 text-gray-700">
-              <li>• AI Ethics & Responsible AI</li>
-              <li>• MLOps & AI Infrastructure</li>
-              <li>• Diversity in Tech</li>
-              <li>• Open Source Contributions</li>
+              <li>• Learning Music</li>
+              <li>• Vibe coding</li>
+              <li>• Open source software</li>
+              <li>• DE&I activist</li>
             </ul>
           </div>
         </div>
@@ -169,7 +166,10 @@ const CV = () => {
               </div>
               <div className="flex justify-between items-center mb-1">
                 <p className="text-gray-600 text-xs">Vodafone Procurement Company - Luxembourg</p>
-                <p className="text-gray-600 text-xs">Oct. 2020 - Sept. 2021</p>
+                <div className="text-right">
+                  <p className="text-gray-600 text-xs">Oct. 2020 - Sept. 2021</p>
+                  <p className="text-gray-500 text-xs italic">1 year</p>
+                </div>
               </div>
               <p className="font-semibold text-xs mb-1 text-blue-700">⭐ Flagship AI Project: Computer Vision for IC Detection</p>
               <ul className="text-xs space-y-1 ml-2">
@@ -185,10 +185,13 @@ const CV = () => {
               <h3 className="text-xs font-bold text-gray-800 mb-1">Associate Technology Consultant | Enterprise AI Solutions</h3>
               <div className="flex justify-between items-center mb-1">
                 <p className="text-gray-600 text-xs">PwC Advisory - Luxembourg</p>
-                <p className="text-gray-600 text-xs">Feb. 2023 - Present</p>
+                <div className="text-right">
+                  <p className="text-gray-600 text-xs">Feb. 2023 - Present</p>
+                  <p className="text-gray-500 text-xs italic">2 years 4 months</p>
+                </div>
               </div>
               <ul className="text-xs space-y-1 ml-2">
-                <li>• Architected AI-enhanced document management systems for <strong>30,000+ government users</strong></li>
+                <li>• Architected a government usage document and case management system with a user base of over 30k+ Luxembourg users</li>
                 <li>• Led Ivalua P2P automation implementation, achieving <strong>30% process optimization</strong></li>
                 <li>• Developed enterprise-grade technical specifications for IBM CloudPak integration</li>
                 <li>• Transformed business requirements into scalable AI-ready system architectures</li>
@@ -200,7 +203,10 @@ const CV = () => {
               <h3 className="text-xs font-bold text-gray-800 mb-1">Application Development Associate | Data Migration Specialist</h3>
               <div className="flex justify-between items-center mb-1">
                 <p className="text-gray-600 text-xs">Accenture France - Paris</p>
-                <p className="text-gray-600 text-xs">Apr. 2022 - Sept. 2022</p>
+                <div className="text-right">
+                  <p className="text-gray-600 text-xs">Apr. 2022 - Sept. 2022</p>
+                  <p className="text-gray-500 text-xs italic">6 months</p>
+                </div>
               </div>
               <ul className="text-xs ml-2">
                 <li>• Designed BPMN business process flows and automated workflows using Python/VBA</li>
@@ -217,7 +223,10 @@ const CV = () => {
               <h3 className="text-xs font-bold text-gray-800 mb-1">Master's in Information Systems (MIAGE)</h3>
               <div className="flex justify-between items-center mb-1">
                 <p className="text-gray-600 text-xs">Université Toulouse 1 Capitole, France</p>
-                <p className="text-gray-600 text-xs">2019 - 2022</p>
+                <div className="text-right">
+                  <p className="text-gray-600 text-xs">2019 - 2022</p>
+                  <p className="text-gray-500 text-xs italic">3 years</p>
+                </div>
               </div>
               <div className="bg-green-50 p-2 rounded border-l-4 border-green-500 mb-2">
                 <p className="font-semibold text-xs mb-1 text-green-700">🎓 AI Research Thesis:</p>
