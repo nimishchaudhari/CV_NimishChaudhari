@@ -1,5 +1,4 @@
-import React from 'react';
-import { Mail, MapPin, Phone, User, Calendar, Car, Linkedin, Brain, Database, Code } from 'lucide-react';
+import { Mail, MapPin, Phone, Car, Linkedin, Brain, Database, Code } from 'lucide-react';
 
 const CV = () => {
   return (
@@ -13,10 +12,7 @@ const CV = () => {
       <div className="flex h-full">
         {/* Left Sidebar - Enhanced with AI branding */}
         <div className="w-64 bg-gradient-to-br from-blue-50 to-indigo-100 p-5 border-r-2 border-blue-200">
-          {/* Photo placeholder with AI icon */}
-          <div className="w-28 h-36 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center mb-4 shadow-md">
-            <Brain className="w-10 h-10 text-white" />
-          </div>
+
           
           {/* Name and AI-focused Title */}
           <div className="mb-5">
@@ -232,20 +228,7 @@ const CV = () => {
             </div>
           </div>
 
-          {/* Key Achievements */}
-          <div>
-            <h2 className="text-sm font-bold mb-3 text-gray-800 border-b-2 border-blue-600 pb-1">KEY AI ACHIEVEMENTS</h2>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="bg-blue-50 p-2 rounded text-center">
-                <p className="text-lg font-bold text-blue-700">97%</p>
-                <p className="text-xs text-gray-700">Process Time Reduction</p>
-              </div>
-              <div className="bg-green-50 p-2 rounded text-center">
-                <p className="text-lg font-bold text-green-700">30K+</p>
-                <p className="text-xs text-gray-700">Users Impacted</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
