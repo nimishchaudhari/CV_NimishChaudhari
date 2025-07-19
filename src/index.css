@@ -1,3 +1,305 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Print-specific CSS for CV */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  @page:first {
+    margin: 0;
+  }
+
+  @page:last {
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html, body {
+    background: white !important;
+    background-color: white !important;
+    background-image: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: relative !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Remove any wrapper backgrounds and positioning */
+  body > div,
+  #root {
+    background: white !important;
+    background-color: white !important;
+    background-image: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  /* Remove App wrapper spacing for print */
+  .min-h-screen {
+    min-height: unset !important;
+    height: auto !important;
+  }
+
+  .bg-gray-100 {
+    background: white !important;
+    background-color: white !important;
+  }
+
+  .py-8 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Position CV container at absolute top-left of page */
+  .cv-container {
+    width: 210mm !important;
+    height: 290mm !important;
+    max-height: 290mm !important;
+    min-height: unset !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    box-shadow: none !important;
+    background: white !important;
+    background-color: white !important;
+    background-image: none !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    overflow: hidden !important;
+  }
+
+  /* Remove shadows and center margins from CV container for print */
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  .mx-auto {
+    margin: 0 !important;
+  }
+
+  /* Ensure parent container allows absolute positioning */
+  .cv-container-parent {
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Force backgrounds and gradients to print */
+  .bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #eff6ff, #e0e7ff) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #eff6ff, #e0e7ff) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-blue-50 {
+    background-color: #eff6ff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-indigo-50 {
+    background-color: #eef2ff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-blue-100 {
+    background-color: #dbeafe !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-white {
+    background-color: #ffffff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-green-50 {
+    background-color: #f0fdf4 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-yellow-50 {
+    background-color: #fefce8 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Ensure borders print with exact colors */
+  .border-blue-200 {
+    border-color: #bfdbfe !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .border-blue-600 {
+    border-color: #2563eb !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .border-green-500 {
+    border-color: #10b981 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .border-yellow-500 {
+    border-color: #f59e0b !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .border-l-4 {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .border-r-2 {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Print layout optimizations */
+  .flex {
+    display: flex !important;
+  }
+
+  .grid {
+    display: grid !important;
+  }
+
+  /* Ensure text colors print correctly */
+  .text-blue-600 {
+    color: #2563eb !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .text-blue-700 {
+    color: #1d4ed8 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .text-green-700 {
+    color: #047857 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .text-yellow-600 {
+    color: #d97706 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .text-gray-800 {
+    color: #1f2937 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .text-gray-700 {
+    color: #374151 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .text-gray-600 {
+    color: #4b5563 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .text-gray-500 {
+    color: #6b7280 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Remove any page breaks within the CV */
+  .cv-container * {
+    page-break-inside: avoid !important;
+  }
+
+  /* Force single page */
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Absolutely force single page and prevent overflow */
+  .cv-container {
+    page-break-after: never !important;
+    break-after: avoid !important;
+    contain: layout style !important;
+  }
+
+  .cv-container::after {
+    content: '';
+    display: block;
+    page-break-after: never !important;
+    break-after: avoid !important;
+  }
+
+  /* Prevent any elements from extending beyond container */
+  .cv-container * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+  }
+
+  /* Force everything to stay within A4 bounds */
+  .cv-container > * {
+    max-height: 290mm !important;
+    overflow: hidden !important;
+  }
+
+  /* Remove any default browser styling that creates gray backgrounds */
+  html {
+    background: white !important;
+  }
+
+  body::before,
+  body::after {
+    display: none !important;
+  }
+
+  /* Reduce spacing for print */
+  .cv-container .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .cv-container .mb-5 {
+    margin-bottom: 1rem !important;
+  }
+
+  .cv-container .p-5 {
+    padding: 1rem !important;
+  }
+}
