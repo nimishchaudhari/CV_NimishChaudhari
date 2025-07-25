@@ -178,7 +178,6 @@ const CV = () => {
             <h2 className="text-sm font-bold mb-2 text-gray-800 border-b-2 border-blue-600 pb-1">SELECTED GENAI PROJECTS</h2>
             <ul className="text-xs space-y-0 ml-2">
               <li>• <strong>Power Automate & n8n RAG Suite</strong> – Orchestrated integrated data sources as in consulting projects</li>
-              <li>• <strong>Falcon-3B 1.58-bit Finetuning</strong> – For function calling, based on edge AI focus</li>
               <li>• <strong>RecursiveNet-Rust Implementation</strong> – From information theory paper (<a href="https://github.com/nimishchaudhari/RecursiveNet_rust" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
               <li>• <strong>Maiboli Programming Language</strong> – Marathi-based Python solution (<a href="https://ieeexplore.ieee.org/document/8973043" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
             </ul>
