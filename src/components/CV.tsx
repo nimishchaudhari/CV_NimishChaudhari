@@ -140,7 +140,7 @@ const CV = () => {
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">INFRASTRUCTURE</h3>
                 <ul className="text-xs space-y-0 ml-2">
                   <li>• Hypervisor & Containerization</li>
-                  <li>• VM and Container Networking</li>
+                  <li>• VM Networking</li>
                   <li>• Ansible, Tunneling</li>
                   <li>• Full Stack DevOps</li>
                 </ul>
@@ -158,9 +158,8 @@ const CV = () => {
               <div>
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI SYSTEMS</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• RAG, Retrieval-Augmented Generation</li>
+                  <li>• RAG</li>
                   <li>• Multi-Agent Orchestration</li>
-                  <li>• LangChain, n8n, Hermes</li>
                   <li>• Agentic Workflows</li>
                   <li>• Workflow Automation</li>
                 </ul>
