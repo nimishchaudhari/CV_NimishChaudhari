@@ -71,7 +71,7 @@ const CV = () => {
               <li>• Problem Solving & Analysis</li>
               <li>• Stakeholder Management</li>
               <li>• Technical Documentation</li>
-              <li>• Business Process Optimization</li>
+              <li>• Abstract concept building</li>
               <li>• Coaching and Mentoring</li>
             </ul>
           </div>
@@ -139,11 +139,10 @@ const CV = () => {
               <div>
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">INFRASTRUCTURE</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• Proxmox, LXC, k3s/K8s</li>
-                  <li>• Docker, systemd, Networking</li>
-                  <li>• Ansible, Cloudflare Tunnels</li>
-                  <li>• Bare-metal Deployment</li>
-                  <li>• CI/CD Pipelines</li>
+                  <li>• Hypervisor & Containerization</li>
+                  <li>• VM and Container Networking</li>
+                  <li>• Ansible, Tunneling</li>
+                  <li>• Full Stack DevOps</li>
                 </ul>
               </div>
               <div>
@@ -151,18 +150,18 @@ const CV = () => {
                 <ul className="text-xs space-y-0 ml-2">
                   <li>• Python, TypeScript, Bash</li>
                   <li>• PyTorch, TensorFlow</li>
-                  <li>• vLLM, LoRA/PEFT, RAG</li>
+                  <li>• vLLM, llama.cpp</li>
+                  <li>• LoRA/PEFT</li>
                   <li>• Model Serving & Inference</li>
-                  <li>• RL Fine-tuning</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI SYSTEMS</h3>
                 <ul className="text-xs space-y-0 ml-2">
+                  <li>• RAG, Retrieval-Augmented Generation</li>
                   <li>• Multi-Agent Orchestration</li>
                   <li>• LangChain, n8n, Hermes</li>
                   <li>• Agentic Workflows</li>
-                  <li>• Agentic RL, PRM Scoring</li>
                   <li>• Workflow Automation</li>
                 </ul>
               </div>
