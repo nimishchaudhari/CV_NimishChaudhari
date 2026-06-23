@@ -137,35 +137,33 @@ const CV = () => {
             
             <div className="grid grid-cols-3 gap-3">
               <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">Languages</h3>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">INFRASTRUCTURE</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• Python</li>
-                  <li>• JavaScript/TS</li>
-                  <li>• SQL</li>
-                  <li>• Bash/Shell</li>
-                  <li>• Prompt Coding</li>
+                  <li>• Proxmox, LXC, k3s/K8s</li>
+                  <li>• Docker, systemd, Networking</li>
+                  <li>• Ansible, Cloudflare Tunnels</li>
+                  <li>• Bare-metal Deployment</li>
+                  <li>• CI/CD Pipelines</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">Machine Learning</h3>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">MACHINE LEARNING</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• PyTorch</li>
-                  <li>• TensorFlow</li>
-                  <li>• LangChain</li>
-                  <li>• n8n</li>
-                  <li>• RAG Workflows</li>
-                  <li>• LLM Finetuning</li>
+                  <li>• Python, TypeScript, Bash</li>
+                  <li>• PyTorch, TensorFlow</li>
+                  <li>• vLLM, LoRA/PEFT, RAG</li>
+                  <li>• Model Serving & Inference</li>
+                  <li>• RL Fine-tuning</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">Cloud & DevOps</h3>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI SYSTEMS</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• AWS (EKS, S3, SageMaker)</li>
-                  <li>• Azure ML</li>
-                  <li>• Docker</li>
-                  <li>• GitHub Actions</li>
-                  <li>• MLOps</li>
-                  <li>• Power Platform</li>
+                  <li>• Multi-Agent Orchestration</li>
+                  <li>• LangChain, n8n, Hermes</li>
+                  <li>• Agentic Workflows</li>
+                  <li>• Agentic RL, PRM Scoring</li>
+                  <li>• Workflow Automation</li>
                 </ul>
               </div>
             </div>
