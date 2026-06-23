@@ -52,11 +52,6 @@ const CV = () => {
                 <p className="text-xs text-gray-600">• Azure Fundamentals (AZ-900)</p>
                 <p className="text-xs text-gray-600">• Azure Data Scientist (DP-100)</p>
               </div>
-              <div className="bg-white rounded p-2 shadow-sm">
-                <p className="text-xs font-semibold text-blue-700">AI & Data Analytics</p>
-                <p className="text-xs text-gray-600">• Neural Networks and Deep Learning (Coursera)</p>
-                <p className="text-xs text-gray-600">• Apache Spark SQL for Data Analysts (Databricks)</p>
-              </div>
             </div>
           </div>
 
@@ -66,7 +61,6 @@ const CV = () => {
               SOFT SKILLS
             </h3>
             <ul className="text-xs space-y-1 ml-2">
-              <li>• Client Workshops & Training</li>
               <li>• Cross-functional Collaboration</li>
               <li>• Problem Solving & Analysis</li>
               <li>• Stakeholder Management</li>
@@ -115,7 +109,6 @@ const CV = () => {
               <li>• DEI Activism</li>
               <li>• Dota 2</li>
               <li>• Self hosting</li>
-              <li>• Vibe coding</li>
             </ul>
           </div>
         </div>
@@ -209,8 +202,6 @@ const CV = () => {
               <p className="font-semibold text-xs mb-1 text-blue-700">⭐ Flagship AI Project: Computer Vision for IC Detection</p>
               <ul className="text-xs space-y-0 ml-2">
                 <li>• Implemented deep learning model for object detection achieving <strong>99.44% precision</strong></li>
-                <li>• Contributed to CO2 emissions tracking software project (in partnership with KPMG)</li>
-                <li>• Set up local development version control and backup system (GOGS - GIT)</li>
                 <li>• Featured in European Business Review (<a href="https://www.europeanbusinessreview.com/powering-costing-with-artificial-intelligence-the-case-of-vodafone-procurement/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
               </ul>
             </div>
