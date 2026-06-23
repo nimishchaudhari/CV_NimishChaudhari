@@ -29,9 +29,7 @@ const CV = () => {
             <div className="text-gray-700">
               <span className="font-medium">Phone:</span> +33 (0)7 63 55 45 51
             </div>
-            <div className="text-gray-700 text-xs italic">
-              Recognized worker with disability status
-            </div>
+
             <div className="text-gray-700">
               <span className="font-medium">Location:</span> Luxembourg
             </div>
@@ -178,7 +176,7 @@ const CV = () => {
             <h2 className="text-sm font-bold mb-2 text-gray-800 border-b-2 border-blue-600 pb-1">SELECTED GENAI PROJECTS</h2>
             <ul className="text-xs space-y-0 ml-2">
               <li>• <strong>Power Automate & n8n RAG Suite</strong> – Orchestrated integrated data sources as in consulting projects</li>
-              <li>• <strong>RecursiveNet-Rust Implementation</strong> – From information theory paper (<a href="https://github.com/nimishchaudhari/RecursiveNet_rust" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
+
               <li>• <strong>Maiboli Programming Language</strong> – Marathi-based Python solution (<a href="https://ieeexplore.ieee.org/document/8973043" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
             </ul>
           </div>
@@ -198,8 +196,6 @@ const CV = () => {
                 </div>
               </div>
               <ul className="text-xs space-y-0 ml-2">
-                <li>• Architecting and spearheading GenAI use case implementations based on client needs</li>
-                <li>• Led Ivalua P2P automation implementation, achieving <strong>30% process optimization</strong></li>
                 <li>• Developed enterprise-grade technical specifications for IBM CloudPak integration</li>
               </ul>
             </div>
