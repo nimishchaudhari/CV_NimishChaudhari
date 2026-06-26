@@ -16,9 +16,8 @@ const CV = () => {
           
           {/* Name and Title */}
           <div className="mb-5">
-            <h1 className="text-xl font-bold mb-1 text-gray-800">Nimish</h1>
-            <h1 className="text-xl font-bold mb-2 text-gray-800">CHAUDHARI</h1>
-            <p className="text-gray-700 text-xs leading-relaxed">Client-facing Technology Consultant at PwC Luxembourg</p>
+            <h1 className="text-xl font-bold mb-1 text-gray-800">Nimish CHAUDHARI</h1>
+            <p className="text-gray-700 text-xs leading-relaxed">ML Systems Architect</p>
           </div>
 
           {/* Contact Info */}
@@ -41,10 +40,10 @@ const CV = () => {
             </div>
           </div>
 
-          {/* AI & Cloud Certifications */}
+          {/* Certifications */}
           <div className="mb-5">
             <h3 className="text-sm font-bold mb-3 text-gray-800">
-              AI & CLOUD CERTIFICATIONS
+              CERTIFICATIONS
             </h3>
             <div className="space-y-2">
               <div className="bg-white rounded p-2 shadow-sm">
@@ -75,27 +74,27 @@ const CV = () => {
             <h3 className="text-sm font-bold mb-3 text-gray-800">LANGUAGES</h3>
             <div className="space-y-2">
               <div>
-                <p className="text-xs font-medium mb-1">English - C2</p>
-                <div className="w-full bg-gray-300 rounded-full h-1">
-                  <div className="bg-blue-600 h-1 rounded-full w-full"></div>
-                </div>
-              </div>
-              <div>
-                <p className="text-xs font-medium mb-1">French - C1</p>
+                <p className="text-xs font-medium mb-1">English - C1</p>
                 <div className="w-full bg-gray-300 rounded-full h-1">
                   <div className="bg-blue-600 h-1 rounded-full w-5/6"></div>
                 </div>
               </div>
               <div>
-                <p className="text-xs font-medium mb-1">Hindi/Marathi - Native</p>
+                <p className="text-xs font-medium mb-1">French - B2</p>
+                <div className="w-full bg-gray-300 rounded-full h-1">
+                  <div className="bg-blue-600 h-1 rounded-full w-4/6"></div>
+                </div>
+              </div>
+              <div>
+                <p className="text-xs font-medium mb-1">Hindi - Native</p>
                 <div className="w-full bg-gray-300 rounded-full h-1">
                   <div className="bg-blue-600 h-1 rounded-full w-full"></div>
                 </div>
               </div>
               <div>
-                <p className="text-xs font-medium mb-1">Spanish - A2</p>
+                <p className="text-xs font-medium mb-1">Spanish - B1</p>
                 <div className="w-full bg-gray-300 rounded-full h-1">
-                  <div className="bg-blue-600 h-1 rounded-full w-2/5"></div>
+                  <div className="bg-blue-600 h-1 rounded-full w-3/6"></div>
                 </div>
               </div>
             </div>
@@ -105,9 +104,8 @@ const CV = () => {
           <div>
             <h3 className="text-sm font-bold mb-3 text-gray-800">INTERESTS</h3>
             <ul className="text-xs space-y-1 text-gray-700">
-              <li>• Learning music</li>
-              <li>• DEI Activism</li>
-              <li>• Dota 2</li>
+              <li>• Starcraft 2</li>
+              <li>• Running</li>
               <li>• Self hosting</li>
             </ul>
           </div>
@@ -120,7 +118,7 @@ const CV = () => {
           <div className="mb-4 bg-gradient-to-r from-blue-50 to-indigo-50 p-3 rounded-lg border-l-4 border-blue-600">
             <h2 className="text-sm font-bold mb-2 text-gray-800">PROFESSIONAL SUMMARY</h2>
             <p className="text-xs text-gray-700 leading-relaxed">
-              Long-time neural network enthusiast turned techno-functional consultant, combining technical depth with business acumen. Uses 'AI Centaur' approach - collaborating with GenAI for brainstorming and implementation. Driven to expand AI adoption through rigorous, client-focused delivery and knowledge sharing.
+              ML Systems Architect who bridges model requirements and production infrastructure. I build end-to-end ML systems — from training and fine-tuning through deployment, monitoring, and cost-aware scaling. Focused on making large language models faster and cheaper in production through inference optimization, serving architecture, and the systems that keep them running reliably.
             </p>
           </div>
 
@@ -133,9 +131,9 @@ const CV = () => {
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">INFRASTRUCTURE</h3>
                 <ul className="text-xs space-y-0 ml-2">
                   <li>• Hypervisor & Containerization</li>
-                  <li>• VM Networking</li>
-                  <li>• Ansible, Tunneling</li>
-                  <li>• Full Stack DevOps</li>
+                  <li>• VM Networking & DevOps</li>
+                  <li>• Ansible, Tunneling, CI/CD</li>
+                  <li>• Cloud Services Management</li>
                 </ul>
               </div>
               <div>
@@ -144,17 +142,17 @@ const CV = () => {
                   <li>• Python, TypeScript, Bash</li>
                   <li>• PyTorch, TensorFlow</li>
                   <li>• vLLM, llama.cpp</li>
-                  <li>• LoRA/PEFT</li>
-                  <li>• Model Serving & Inference</li>
+                  <li>• LoRA/PEFT, Model Serving</li>
+                  <li>• RAG Architecture</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI SYSTEMS</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• RAG</li>
+                  <li>• Prompt Orchestration</li>
                   <li>• Multi-Agent Orchestration</li>
-                  <li>• Agentic Workflows</li>
-                  <li>• Workflow Automation</li>
+                  <li>• Context Engineering</li>
+                  <li>• Token Usage Optimization</li>
                 </ul>
               </div>
             </div>
@@ -162,9 +160,10 @@ const CV = () => {
 
           {/* Selected GenAI Projects */}
           <div className="mb-4">
-            <h2 className="text-sm font-bold mb-2 text-gray-800 border-b-2 border-blue-600 pb-1">SELECTED GENAI PROJECTS</h2>
+            <h2 className="text-sm font-bold mb-2 text-gray-800 border-b-2 border-blue-600 pb-1">PROJECTS</h2>
             <ul className="text-xs space-y-0 ml-2">
               <li>• <strong>Power Automate & n8n RAG Suite</strong> – Orchestrated integrated data sources as in consulting projects</li>
+              <li>• <strong>Self-Hosted LLM Infrastructure</strong> – Deployed containerized LLM services with vLLM, load balancing, and CI/CD</li>
 
               <li>• <strong>Maiboli Programming Language</strong> – Marathi-based Python solution (<a href="https://ieeexplore.ieee.org/document/8973043" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
             </ul>
@@ -176,34 +175,41 @@ const CV = () => {
             
             {/* PwC */}
             <div className="mb-2">
-              <h3 className="text-xs font-bold text-gray-800 mb-1">Associate Technology Consultant | Enterprise AI Solutions</h3>
+              <h3 className="text-xs font-bold text-gray-800 mb-1">Technology Consultant | AI & Enterprise Solutions</h3>
               <div className="flex justify-between items-center mb-1">
                 <p className="text-gray-600 text-xs">PwC Advisory - Luxembourg</p>
                 <div className="text-right">
                   <p className="text-gray-600 text-xs">February 2023 – Present</p>
-                  <p className="text-gray-500 text-xs italic">2 years 4 months</p>
+                  <p className="text-gray-500 text-xs italic">3 years</p>
                 </div>
               </div>
               <ul className="text-xs space-y-0 ml-2">
-                <li>• Developed enterprise-grade technical specifications for IBM CloudPak integration</li>
+                <li>• Designed and implemented end-to-end LLM pipelines for data ingestion, retrieval, and prompt orchestration</li>
+                <li>• Self-hosted LLM/Python App for benchmarking and privacy-sensitive workloads</li>
+                <li>• Advanced context engineering, prompting, and token usage optimization</li>
+                <li>• Expertise in Retrieval Augmented Generation and technical AI use case implementation</li>
               </ul>
+              <p className="font-semibold text-xs mt-1 text-blue-700">🏆 End-to-end build of full-stack AI use case using self-hosted AI</p>
             </div>
 
             {/* Vodafone */}
             <div className="mb-2">
-              <h3 className="text-xs font-bold text-gray-800 mb-1">AI Intern | Computer Vision Specialist</h3>
+              <h3 className="text-xs font-bold text-gray-800 mb-1">AI Development Intern | Computer Vision</h3>
               <div className="flex justify-between items-center mb-1">
-                <p className="text-gray-600 text-xs">Vodafone Procurement Company - Luxembourg</p>
+                <p className="text-gray-600 text-xs">Vodafone Procure & Connect (D2C Lab) - Luxembourg</p>
                 <div className="text-right">
                   <p className="text-gray-600 text-xs">October 2020 – September 2021</p>
                   <p className="text-gray-500 text-xs italic">1 year</p>
                 </div>
               </div>
-              <p className="font-semibold text-xs mb-1 text-blue-700">⭐ Flagship AI Project: Computer Vision for IC Detection</p>
               <ul className="text-xs space-y-0 ml-2">
-                <li>• Implemented deep learning model for object detection achieving <strong>99.44% precision</strong></li>
+                <li>• Deep Learning for Electronic Component Identification</li>
+                <li>• Designed deep learning approach, implemented algorithm, deployed on AWS EC2</li>
+                <li>• Built GUI for non-technical users to leverage advanced AI system</li>
+                <li>• Achieved <strong>99.44% precision</strong> in object detection for chipsets and motherboards</li>
                 <li>• Featured in European Business Review (<a href="https://www.europeanbusinessreview.com/powering-costing-with-artificial-intelligence-the-case-of-vodafone-procurement/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
               </ul>
+              <p className="font-semibold text-xs mt-1 text-blue-700">🏆 End-to-end full-stack computer vision pipeline with cloud services</p>
             </div>
 
             {/* Accenture */}
@@ -220,6 +226,7 @@ const CV = () => {
                 <li>• Designed and modelled business processes using BPMN and automated workflows using Python/VBA</li>
                 <li>• Contributed to big data retail system implementation with large-scale legacy data migration</li>
               </ul>
+              <p className="font-semibold text-xs mt-1 text-blue-700">🏆 Successful first experience in retail software migration working full-time in French</p>
             </div>
           </div>
 
@@ -231,11 +238,12 @@ const CV = () => {
               <p className="text-gray-600 text-xs">Université Toulouse 1 Capitole, France</p>
               <p className="text-gray-600 text-xs">2019 – 2022</p>
             </div>
-            <div className="bg-green-50 p-1 rounded border-l-4 border-green-500 mb-1">
-              <p className="font-semibold text-xs text-green-700">🎓 AI Research Thesis: <span className="italic">"Game Theory-Based AI Modeling of Open COVID-19 Data in France"</span></p>
-              <p className="text-xs text-gray-600">Applied advanced AI modeling techniques to epidemiological data analysis</p>
-            </div>
             <p className="text-xs"><strong>Coursework:</strong> AI Systems Architecture, Advanced Data Analysis, Business Intelligence, Cybersecurity</p>
+            <h3 className="text-xs font-bold text-gray-800 mt-3">Bachelor's in Computer Science</h3>
+            <div className="flex justify-between items-center">
+              <p className="text-gray-600 text-xs">University of Mumbai, India</p>
+              <p className="text-gray-600 text-xs">2016 – 2019</p>
+            </div>
           </div>
           
 
