@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Generate PDF
+        run: |
+          node -e "
+          const puppeteer = require('puppeteer');
+          const http = require('http');
+          const fs = require('fs');
+          const path = require('path');
+          const DIST = path.join(process.cwd(), 'dist');
+          const server = http.createServer((req, res) => {
+            let filePath = req.url;
+            if (filePath === '/') filePath = '/index.html';
+            if (filePath.startsWith('/CV_NimishChaudhari/')) filePath = filePath.replace('/CV_NimishChaudhari/', '/');
+            filePath = path.join(DIST, filePath);
+            if (!filePath.startsWith(DIST)) { res.writeHead(403); res.end('Forbidden'); return; }
+            const ext = path.extname(filePath);
+            const types = { '.html':'text/html', '.css':'text/css', '.js':'application/javascript' };
+            fs.readFile(filePath, (err, content) => {
+              if (err) { res.writeHead(404); res.end('Not found'); return; }
+              res.writeHead(200, { 'Content-Type': types[ext] || 'application/octet-stream' });
+              res.end(content, 'utf-8');
+            });
+          });
+          server.listen(9098, '127.0.0.1', async () => {
+            const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+            const page = await browser.newPage();
+            await page.goto('http://127.0.0.1:9098/', { waitUntil: 'networkidle0', timeout: 30000 });
+            await new Promise(r => setTimeout(r, 3000));
+            await page.pdf({ path: 'cv.pdf', format: 'A4', printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
+            console.log('PDF generated');
+            await browser.close();
+            server.close();
+          });
+          "
+
+      - name: Deploy to Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITEA_TOKEN }}
+          publish_dir: ./dist
