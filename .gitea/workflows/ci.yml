@@ -1,4 +1,4 @@
-name: Build
+name: Build & Deploy
 
 on:
   push:
@@ -22,3 +22,14 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Deploy to pages branch
+        run: |
+          git config user.name "gitea-pages"
+          git config user.email "actions@gitea.com"
+          git checkout --orphan pages || git checkout pages
+          git rm -rf .
+          cp -r dist/* .
+          git add .
+          git commit -m "build: deploy pages" || exit 0
+          git push origin pages --force
