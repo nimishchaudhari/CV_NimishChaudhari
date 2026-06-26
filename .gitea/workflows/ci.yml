@@ -1,11 +1,11 @@
-name: CI
+name: Build and Deploy
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,45 +24,20 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Install Puppeteer
-        run: npm install puppeteer
-
-      - name: Generate PDF
-        run: |
-          node -e "
-          const puppeteer = require('puppeteer');
-          const http = require('http');
-          const fs = require('fs');
-          const path = require('path');
-          const DIST = path.join(process.cwd(), 'dist');
-          const server = http.createServer((req, res) => {
-            let filePath = req.url;
-            if (filePath === '/') filePath = '/index.html';
-            if (filePath.startsWith('/CV_NimishChaudhari/')) filePath = filePath.replace('/CV_NimishChaudhari/', '/');
-            filePath = path.join(DIST, filePath);
-            if (!filePath.startsWith(DIST)) { res.writeHead(403); res.end('Forbidden'); return; }
-            const ext = path.extname(filePath);
-            const types = { '.html':'text/html', '.css':'text/css', '.js':'application/javascript' };
-            fs.readFile(filePath, (err, content) => {
-              if (err) { res.writeHead(404); res.end('Not found'); return; }
-              res.writeHead(200, { 'Content-Type': types[ext] || 'application/octet-stream' });
-              res.end(content, 'utf-8');
-            });
-          });
-          server.listen(9098, '127.0.0.1', async () => {
-            const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
-            const page = await browser.newPage();
-            await page.goto('http://127.0.0.1:9098/', { waitUntil: 'networkidle0', timeout: 30000 });
-            await new Promise(r => setTimeout(r, 3000));
-            await page.pdf({ path: 'cv.pdf', format: 'A4', printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
-            console.log('PDF generated');
-            await browser.close();
-            server.close();
-          });
-          "
-
-      - name: Deploy to Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITEA_TOKEN }}
-          publish_dir: ./dist
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Deploy to Gitea Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
