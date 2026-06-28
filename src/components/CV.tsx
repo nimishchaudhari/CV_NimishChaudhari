@@ -17,7 +17,7 @@ const CV = () => {
           {/* Name and Title */}
           <div className="mb-5">
             <h1 className="text-xl font-bold mb-1 text-gray-800">Nimish CHAUDHARI</h1>
-            <p className="text-gray-700 text-xs leading-relaxed">ML Systems Architect</p>
+            <p className="text-gray-700 text-xs leading-relaxed">AI Solutions Architect</p>
           </div>
 
           {/* Contact Info */}
@@ -118,7 +118,7 @@ const CV = () => {
           <div className="mb-4 bg-gradient-to-r from-blue-50 to-indigo-50 p-3 rounded-lg border-l-4 border-blue-600">
             <h2 className="text-sm font-bold mb-2 text-gray-800">PROFESSIONAL SUMMARY</h2>
             <p className="text-xs text-gray-700 leading-relaxed">
-              ML Systems Architect who bridges model requirements and production infrastructure. I build end-to-end ML systems — from training and fine-tuning through deployment, monitoring, and cost-aware scaling. Focused on making large language models faster and cheaper in production through inference optimization, serving architecture, and the systems that keep them running reliably.
+              AI Solutions Architect who bridges business objectives and AI implementation. I evaluate, prototype, and integrate AI solutions into enterprise systems — from RFI/RFP assessment through architecture design and production deployment. Experienced in Microsoft Copilot ecosystem, Azure AI, and federated AI governance. Focused on making AI adoption scalable, measurable, and aligned with business outcomes.
             </p>
           </div>
 
@@ -128,31 +128,34 @@ const CV = () => {
             
             <div className="grid grid-cols-3 gap-3">
               <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">INFRASTRUCTURE</h3>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI PLATFORMS</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• Hypervisor & Containerization</li>
-                  <li>• VM Networking & DevOps</li>
-                  <li>• Ansible, Tunneling, CI/CD</li>
-                  <li>• Cloud Services Management</li>
+                  <li>• Microsoft Copilot & Studio</li>
+                  <li>• Power Automate</li>
+                  <li>• Azure AI Services, M365</li>
+                  <li>• Solution Architecture (TOGAF)</li>
+                  <li>• Data Governance</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">MACHINE LEARNING</h3>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI ENGINEERING</h3>
                 <ul className="text-xs space-y-0 ml-2">
                   <li>• Python, TypeScript, Bash</li>
-                  <li>• PyTorch, TensorFlow</li>
-                  <li>• vLLM, llama.cpp</li>
-                  <li>• LoRA/PEFT, Model Serving</li>
+                  <li>• LLM Evaluation & Benchmarking</li>
                   <li>• RAG Architecture</li>
+                  <li>• Model Serving, vLLM</li>
+                  <li>• Prompt Orchestration</li>
+                  <li>• Multi-Agent Systems</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI SYSTEMS</h3>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">DELIVERY & OPS</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• Prompt Orchestration</li>
-                  <li>• Multi-Agent Orchestration</li>
-                  <li>• Context Engineering</li>
-                  <li>• Token Usage Optimization</li>
+                  <li>• Cloud (Azure, AWS)</li>
+                  <li>• DevOps, CI/CD, GitHub</li>
+                  <li>• Containerization, Docker</li>
+                  <li>• RFI/RFP Evaluation</li>
+                  <li>• PoC Coordination</li>
                 </ul>
               </div>
             </div>
@@ -162,9 +165,9 @@ const CV = () => {
           <div className="mb-4">
             <h2 className="text-sm font-bold mb-2 text-gray-800 border-b-2 border-blue-600 pb-1">PROJECTS</h2>
             <ul className="text-xs space-y-0 ml-2">
-              <li>• <strong>Power Automate & n8n RAG Suite</strong> – Orchestrated integrated data sources as in consulting projects</li>
-              <li>• <strong>Self-Hosted LLM Infrastructure</strong> – Deployed containerized LLM services with vLLM, load balancing, and CI/CD</li>
-
+              <li>• <strong>Copilot Studio & Power Automate Solutions</strong> – Designed and deployed enterprise AI workflows with integrated data sources for consulting engagements</li>
+              <li>• <strong>AI RFP/RFI Evaluation Framework</strong> – Led structured evaluation methodologies for AI solution selection at PwC</li>
+              <li>• <strong>Self-Hosted LLM Infrastructure</strong> – Deployed containerized LLM services with benchmarking and CI/CD</li>
               <li>• <strong>Maiboli Programming Language</strong> – Marathi-based Python solution (<a href="https://ieeexplore.ieee.org/document/8973043" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
             </ul>
           </div>
@@ -184,12 +187,14 @@ const CV = () => {
                 </div>
               </div>
               <ul className="text-xs space-y-0 ml-2">
-                <li>• Designed and implemented end-to-end LLM pipelines for data ingestion, retrieval, and prompt orchestration</li>
-                <li>• Self-hosted LLM/Python App for benchmarking and privacy-sensitive workloads</li>
-                <li>• Advanced context engineering, prompting, and token usage optimization</li>
-                <li>• Expertise in Retrieval Augmented Generation and technical AI use case implementation</li>
+                <li>• Evaluated and benchmarked AI solutions for enterprise clients — RFI/RFP assessment, maturity analysis, vendor evaluation</li>
+                <li>• Designed solution architectures for Copilot Studio & Power Automate integrations with enterprise data sources</li>
+                <li>• Coordinated cross-functional workshops and stakeholder alignment sessions for AI adoption</li>
+                <li>• Implemented end-to-end LLM pipelines: data ingestion, retrieval, prompt orchestration, RAG architecture</li>
+                <li>• Self-hosted LLM infrastructure for privacy-sensitive workloads with benchmarking</li>
+                <li>• Established standards and operational frameworks for scalable AI deployment</li>
               </ul>
-              <p className="font-semibold text-xs mt-1 text-blue-700">🏆 End-to-end build of full-stack AI use case using self-hosted AI</p>
+              <p className="font-semibold text-xs mt-1 text-blue-700">🏆 End-to-end enterprise AI delivery: evaluation → architecture → prototype → production</p>
             </div>
 
             {/* Vodafone */}
