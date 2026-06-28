@@ -133,7 +133,7 @@ const CV = () => {
                   <li>• Microsoft Copilot & Studio</li>
                   <li>• Power Automate</li>
                   <li>• Azure AI Services, M365</li>
-                  <li>• Solution Architecture (TOGAF)</li>
+                  <li>• Solution Architecture</li>
                   <li>• Data Governance</li>
                 </ul>
               </div>
@@ -151,7 +151,8 @@ const CV = () => {
               <div>
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">DELIVERY & OPS</h3>
                 <ul className="text-xs space-y-0 ml-2">
-                  <li>• Cloud (Azure, AWS)</li>
+                  <li>• Cloud (AWS, Azure, Google Cloud)</li>
+                  <li>• Self-hosting enthusiast</li>
                   <li>• DevOps, CI/CD, GitHub</li>
                   <li>• Containerization, Docker</li>
                   <li>• RFI/RFP Evaluation</li>
