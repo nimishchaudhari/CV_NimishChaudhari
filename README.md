@@ -85,6 +85,7 @@ The CV is optimized for printing:
 | Target | Role | Link |
 |--------|------|------|
 | Banque Raiffeisen | Tech Lead Innovation / IA (M/F/X) — RÉF. 26-21 | [moovijob.com](https://www.moovijob.com/offres-emploi/banque-raiffeisen-sc/tech-lead-innovation-ia-mfx?utm_source=vonq&utm_campaign=feed&utm_medium=referral&igbTracker=927152262) |
+| LuxProvide | Solution Engineer | [luxprovide.lu](https://www.luxprovide.lu/job-offers/solution-engineer/) |
 
 ## 📧 Contact
 
