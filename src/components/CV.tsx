@@ -7,7 +7,7 @@ const CV = () => {
       height: 'auto',
       maxHeight: '297mm',
       fontSize: '10px',
-      lineHeight: '1.3',
+      lineHeight: '1.25',
       fontFamily: 'Calibri, Arial, Helvetica, sans-serif'
     }}>
       <div className="flex h-full">
@@ -65,7 +65,6 @@ const CV = () => {
               <li>• Cross-functional Collaboration</li>
               <li>• Stakeholder Management</li>
               <li>• Technical Documentation</li>
-              <li>• Coaching and Mentoring</li>
             </ul>
           </div>
 
@@ -118,7 +117,7 @@ const CV = () => {
           <div className="mb-4 bg-gradient-to-r from-blue-50 to-indigo-50 p-3 rounded-lg border-l-4 border-blue-600">
             <h2 className="text-sm font-bold mb-2 text-gray-800">PROFESSIONAL SUMMARY</h2>
             <p className="text-xs text-gray-700 leading-relaxed">
-              AI Deployment Strategist focused on sovereign AI and efficient model deployment. I bridge local AI requirements with cloud infrastructure — deploying LLMs on-premise and in-cloud with vLLM, llama.cpp, and optimized inference pipelines. Experienced in navigating hardware constraints, optimizing throughput, and building deployment strategies that balance performance, cost, and data sovereignty. Focused on making AI practical, efficient, and production-ready.
+              AI Deployment Strategist focused on sovereign AI and efficient model deployment. I bridge local AI requirements with cloud infrastructure — deploying LLMs on-premise and in-cloud with vLLM, llama.cpp, and optimized inference pipelines. Experienced in navigating hardware constraints and building deployment strategies that balance performance, cost, and data sovereignty. Focused on making AI practical, efficient, and production-ready.
             </p>
           </div>
 
@@ -132,9 +131,7 @@ const CV = () => {
                 <ul className="text-xs space-y-0 ml-2">
                   <li>• Local LLM Deployment (vLLM, llama.cpp)</li>
                   <li>• Hardware-Aware Optimization</li>
-                  <li>• Model Quantization & Inference Tuning</li>
                   <li>• GPU Resource Management</li>
-                  <li>• Throughput & Latency Optimization</li>
                 </ul>
               </div>
               <div>
@@ -187,11 +184,10 @@ const CV = () => {
               </div>
               <ul className="text-xs space-y-0 ml-2">
                 <li>• Evaluated and benchmarked AI solutions for enterprise clients — RFI/RFP assessment, maturity analysis, vendor selection</li>
-                <li>• Designed solution architectures for Copilot Studio & Power Automate integrations</li>
-                <li>• Coordinated cross-functional workshops for stakeholder alignment and AI adoption</li>
                 <li>• Self-hosted LLM infrastructure: local deployment with vLLM, llama.cpp, GPU optimization, and quantization</li>
                 <li>• Built end-to-end LLM pipelines: RAG, prompt orchestration, model serving, benchmarking</li>
-                <li>• Established operational standards and frameworks for scalable AI deployment</li>
+                <li>• Designed solution architectures for Copilot Studio & Power Automate integrations</li>
+                <li>• Established operational standards for scalable AI deployment</li>
               </ul>
               <p className="font-semibold text-xs mt-1 text-blue-700">🏆 Sovereign AI: local deployment → hardware optimization → benchmarking → production</p>
             </div>
