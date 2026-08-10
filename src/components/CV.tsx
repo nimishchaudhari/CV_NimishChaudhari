@@ -17,7 +17,7 @@ const CV = () => {
           {/* Name and Title */}
           <div className="mb-5">
             <h1 className="text-xl font-bold mb-1 text-gray-800">Nimish CHAUDHARI</h1>
-            <p className="text-gray-700 text-xs leading-relaxed">AI Deployment Strategist</p>
+            <p className="text-gray-700 text-xs leading-relaxed">AI Infrastructure Engineer</p>
           </div>
 
           {/* Contact Info */}
@@ -43,7 +43,7 @@ const CV = () => {
           {/* Certifications */}
           <div className="mb-5">
             <h3 className="text-sm font-bold mb-3 text-gray-800">
-              CERTIFICATIONS
+              CERTIFICATIONS & TRAINING
             </h3>
             <div className="space-y-2">
               <div className="bg-white rounded p-2 shadow-sm">
@@ -51,19 +51,24 @@ const CV = () => {
                 <p className="text-xs text-gray-600">• Azure Fundamentals (AZ-900)</p>
                 <p className="text-xs text-gray-600">• Azure Data Scientist (DP-100)</p>
               </div>
+              <div className="bg-white rounded p-2 shadow-sm">
+                <p className="text-xs font-semibold text-blue-700">Cybersecurity</p>
+                <p className="text-xs text-gray-600">• Cybersecurity Coursework (MIAGE)</p>
+              </div>
             </div>
           </div>
 
-          {/* Soft Skills */}
+          {/* Key Attributes */}
           <div className="mb-5">
             <h3 className="text-sm font-bold mb-3 text-gray-800">
-              SOFT SKILLS
+              KEY ATTRIBUTES
             </h3>
              <ul className="text-xs space-y-1 ml-2">
-              <li>• Strategic Thinking</li>
-              <li>• Technical Problem Solving</li>
+              <li>• Client Relationship Management</li>
+              <li>• Fast Learner</li>
+              <li>• Technical Troubleshooting</li>
               <li>• Cross-functional Collaboration</li>
-              <li>• Stakeholder Management</li>
+              <li>• Stakeholder Communication (Non-Technical)</li>
               <li>• Technical Documentation</li>
             </ul>
           </div>
@@ -117,7 +122,7 @@ const CV = () => {
           <div className="mb-4 bg-gradient-to-r from-blue-50 to-indigo-50 p-3 rounded-lg border-l-4 border-blue-600">
             <h2 className="text-sm font-bold mb-2 text-gray-800">PROFESSIONAL SUMMARY</h2>
             <p className="text-xs text-gray-700 leading-relaxed">
-              AI Deployment Strategist focused on sovereign AI and efficient model deployment. I bridge local AI requirements with cloud infrastructure — deploying LLMs on-premise and in-cloud with vLLM, llama.cpp, and optimized inference pipelines. Experienced in navigating hardware constraints and building deployment strategies that balance performance, cost, and data sovereignty. Focused on making AI practical, efficient, and production-ready.
+              AI Infrastructure Engineer focused on sovereign AI deployment, cloud infrastructure, and production-ready systems. I bridge local AI requirements with cloud infrastructure — deploying LLMs on-premise and in-cloud with vLLM, llama.cpp, and optimized inference pipelines. Experienced in infrastructure management, security benchmarking, and building automated workflows that balance performance, cost, and data sovereignty. Focused on making AI practical, secure, and scalable.
             </p>
           </div>
 
@@ -127,31 +132,35 @@ const CV = () => {
             
             <div className="grid grid-cols-3 gap-3">
               <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">SOVEREIGN AI</h3>
-                <ul className="text-xs space-y-0 ml-2">
-                  <li>• Local LLM Deployment (vLLM, llama.cpp)</li>
-                  <li>• Hardware-Aware Optimization</li>
-                  <li>• GPU Resource Management</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">CLOUD & INFRA</h3>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">CLOUD & INFRASTRUCTURE</h3>
                 <ul className="text-xs space-y-0 ml-2">
                   <li>• Azure, AWS, GCP</li>
-                  <li>• Containerization, Docker</li>
-                  <li>• DevOps, CI/CD, GitHub</li>
-                  <li>• Self-Hosted Infrastructure</li>
-                  <li>• Hypervisor & VM Networking</li>
+                  <li>• Docker, Containerization</li>
+                  <li>• Infrastructure as Code (Terraform, Ansible)</li>
+                  <li>• CI/CD, DevOps Pipelines</li>
+                  <li>• Proxmox, Hypervisor & VM Networking</li>
+                  <li>• Self-Hosted Infrastructure, Coolify</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">AI ENGINEERING</h3>
                 <ul className="text-xs space-y-0 ml-2">
                   <li>• Python, TypeScript, Bash</li>
-                  <li>• LLM Fine-tuning, LoRA/PEFT</li>
-                  <li>• RAG Architecture</li>
-                  <li>• Prompt Orchestration</li>
+                  <li>• LLM Deployment (vLLM, llama.cpp)</li>
+                  <li>• RAG, Prompt Orchestration</li>
+                  <li>• LoRA/PEFT Fine-tuning</li>
+                  <li>• Model Serving & Benchmarking</li>
                   <li>• Microsoft Copilot & Studio</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xs font-semibold text-gray-800 mb-1 bg-blue-100 px-2 py-1 rounded">SECURITY & CYBERSECURITY</h3>
+                <ul className="text-xs space-y-0 ml-2">
+                  <li>• AI Security Benchmarking & Red Teaming</li>
+                  <li>• LLM Jailbreak Testing & Evaluation</li>
+                  <li>• Prompt Injection Analysis</li>
+                  <li>• Cybersecurity Fundamentals</li>
+                  <li>• Secure Cloud Infrastructure</li>
                 </ul>
               </div>
             </div>
@@ -161,10 +170,12 @@ const CV = () => {
           <div className="mb-4">
             <h2 className="text-sm font-bold mb-2 text-gray-800 border-b-2 border-blue-600 pb-1">PROJECTS</h2>
             <ul className="text-xs space-y-0 ml-2">
-              <li>• <strong>Self-Hosted LLM/HPC Infrastructure</strong> – Deployed containerized LLM services (vLLM, llama.cpp) with GPU optimization, quantization, and autoscaling</li>
-              <li>• <strong>Local AI Deployment Pipeline</strong> – End-to-end sovereign AI: model selection, fine-tuning (LoRA), inference optimization, and monitoring</li>
-              <li>• <strong>Enterprise AI Solutions</strong> – Copilot Studio & Power Automate integrations for consulting clients</li>
-              <li>• <strong>Maiboli Programming Language</strong> – Marathi-based Python solution (<a href="https://ieeexplore.ieee.org/document/8973043" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
+              <li>• <strong>AI Security Benchmarking Framework</strong> — Jailbreak evaluation across 3 benchmarks (300 prompts/model) on Qwen, Gemma, Minimax, Kimi — assessed TTFT, throughput, and safety scores for sovereign AI provider selection</li>
+              <li>• <strong>Self-Hosted LLM/HPC Infrastructure</strong> — Deployed containerized LLM services (vLLM, llama.cpp) with GPU optimization, quantization, and autoscaling</li>
+              <li>• <strong>Proxmox Home Lab</strong> — Self-hosted infrastructure with Proxmox, Coolify, and Docker — containerized services, VM networking, hypervisor management, and IaC workflows</li>
+              <li>• <strong>Local AI Deployment Pipeline</strong> — End-to-end sovereign AI: model selection, fine-tuning (LoRA), inference optimization, and monitoring</li>
+              <li>• <strong>Enterprise AI Solutions</strong> — Copilot Studio & Power Automate integrations for consulting clients</li>
+              <li>• <strong>Maiboli Programming Language</strong> — Marathi-based Python solution (<a href="https://ieeexplore.ieee.org/document/8973043" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">link</a>)</li>
             </ul>
           </div>
 
@@ -174,7 +185,7 @@ const CV = () => {
             
             {/* PwC */}
             <div className="mb-2">
-              <h3 className="text-xs font-bold text-gray-800 mb-1">Technology Consultant | AI & Enterprise Solutions</h3>
+              <h3 className="text-xs font-bold text-gray-800 mb-1">Technology Consultant | AI & Cloud Infrastructure</h3>
               <div className="flex justify-between items-center mb-1">
                 <p className="text-gray-600 text-xs">PwC Advisory - Luxembourg</p>
                 <div className="text-right">
@@ -183,13 +194,13 @@ const CV = () => {
                 </div>
               </div>
               <ul className="text-xs space-y-0 ml-2">
-                <li>• Evaluated and benchmarked AI solutions for enterprise clients — RFI/RFP assessment, maturity analysis, vendor selection</li>
-                <li>• Self-hosted LLM infrastructure: local deployment with vLLM, llama.cpp, GPU optimization, and quantization</li>
-                <li>• Built end-to-end LLM pipelines: RAG, prompt orchestration, model serving, benchmarking</li>
-                <li>• Designed solution architectures for Copilot Studio & Power Automate integrations</li>
-                <li>• Established operational standards for scalable AI deployment</li>
+                <li>• Managed client-facing engagements for enterprise AI evaluations — RFI/RFP assessment, maturity analysis, and vendor benchmarking; translated technical findings for non-technical stakeholders</li>
+                <li>• Deployed self-hosted LLM infrastructure (vLLM, llama.cpp) with GPU optimization, quantization, and containerized service orchestration</li>
+                <li>• Built AI security benchmarking framework for sovereign AI provider selection — jailbreak evaluation, TTFT/throughput measurement, and safety scoring across multiple open-weight models</li>
+                <li>• Designed end-to-end LLM pipelines: RAG architecture, prompt orchestration, model serving, and continuous benchmarking</li>
+                <li>• Automated infrastructure management using AI-driven agents (Ansible playbooks, Docker workflows, Coolify deployments) — reducing manual ops overhead</li>
               </ul>
-              <p className="font-semibold text-xs mt-1 text-blue-700">🏆 Sovereign AI: local deployment → hardware optimization → benchmarking → production</p>
+              <p className="font-semibold text-xs mt-1 text-blue-700">🏆 AI Security: jailbreak benchmarking → infrastructure automation → client delivery</p>
             </div>
 
             {/* Vodafone */}
